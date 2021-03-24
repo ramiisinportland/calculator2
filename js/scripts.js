@@ -48,7 +48,7 @@ $(document).ready(function() {
     
 
     // const result = add(number1, number2);
-    $("#output").text(result);
+    $("#output").val(result);
   });
 });
 

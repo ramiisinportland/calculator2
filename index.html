@@ -12,7 +12,7 @@
 </head>
 <body>
   <div class="container p-3">
-    <h1>Calculator</h1>
+    <h1 class="text-center text-uppercase p-4" >Calculator</h1>
     <form>
       <div class="row">
         <div class="col form-group">
@@ -24,15 +24,18 @@
           <input id="add2" class="form-control" type="text">
         </div>        
       </div>
-      <button type="submit" class="btn add btn-success">Add!</button>
-      <button type="submit" class="btn subtract btn-danger">Subtract!</button>
-      <button type="submit" class="btn multiply btn-warning">Multiply!</button>
-      <button type="submit" class="btn divide btn-primary ">Divide!</button>
+      <div class="text-center">
+        <button type="submit" class="btn add btn-success">Add!</button>
+        <button type="submit" class="btn subtract btn-danger">Subtract!</button>
+        <button type="submit" class="btn multiply btn-warning">Multiply!</button>
+        <button type="submit" class="btn divide btn-primary ">Divide!</button>
+      </div>
+      
     </form>
     <hr />
     <div class="jumbotron row m-3">
       <div class="col">Result: </div>
-      <div id="output" class="col"></div>
+      <input type="text" class="form-control" id="output" readonly />
     </div>
   </div>
     
