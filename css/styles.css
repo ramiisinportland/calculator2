@@ -1,3 +1,17 @@
 body {
-  background: #dedede;
+  background: #000;
+}
+
+.col {
+  margin: 0;
+}
+
+.calc-button {
+  min-width: 80px;
+  width: 100%;
+  margin: 0;
+}
+
+.result {
+  width: 100%;
 }

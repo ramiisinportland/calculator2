@@ -10,18 +10,18 @@
   <link rel="stylesheet" href="css/styles.css">
   <title>Calculator</title>
 </head>
+ <!--Old version start-->
 <body>
-  <div class="container p-3">
-    <h1 class="text-center text-uppercase p-4" >Calculator</h1>
+  <!-- <div class="container p-3">
     <form>
       <div class="row">
-        <div class="col form-group">
-          <label for="add1">1st number:</label>
-          <input id="add1" class="form-control" type="text">
+        <div class="col m-0 form-group">
+          <label for="value1">1st number:</label>
+          <input id="value1" class="form-control" type="text">
         </div>
-        <div class="col form-group">
-          <label for="add2">2nd number:</label>
-          <input id="add2" class="form-control" type="text">
+        <div class="col m-0 form-group">
+          <label for="value2">2nd number:</label>
+          <input id="value2" class="form-control" type="text">
         </div>        
       </div>
       <div class="text-center">
@@ -30,15 +30,93 @@
         <button type="submit" class="btn multiply btn-warning">Multiply!</button>
         <button type="submit" class="btn divide btn-primary ">Divide!</button>
       </div>
-      
+     
     </form>
+    
+    
     <hr />
     <div class="jumbotron row m-3">
-      <div class="col">Result: </div>
+      <div class="col m-0">Result: </div>
       <input type="text" class="form-control" id="output" readonly />
     </div>
-  </div>
-    
+  </div> -->
+   <!--Old version end-->
+
+  <section class="container">
+    <h1 class="text-center text-uppercase p-4" >Calculator</h1>
+
+    <div class="container jumbotron">
+      <input class="text-center result" type="text" disabled />
+    </div>
+
+    <div class="container card">
+      
+      <div class="row">
+        <div class="col m-0">
+          <button class="btn btn-info btn-lg calc-button mt-3" id="seven">7</button>
+        </div>
+        <div class="col m-0">
+          <button class="btn btn-info btn-lg calc-button mt-3" id="eight">8</button>
+        </div>
+        <div class="col m-0">
+          <button class="btn btn-info btn-lg calc-button mt-3" id="nine">9</button>
+        </div>
+        <div class="col m-0">
+          <button class="btn btn-info btn-lg calc-button mt-3 btn-warning" id="add">+</button>
+        </div>  
+      </div>
+
+      <div class="row">
+        <div class="col m-0">
+          <button class="btn btn-info btn-lg calc-button mt-3" id="four">4</button>
+        </div>
+        <div class="col m-0">
+          <button class="btn btn-info btn-lg calc-button mt-3" id="five">5</button>
+        </div>
+        <div class="col m-0">
+          <button class="btn btn-info btn-lg calc-button mt-3" id="six">6</button>
+        </div>
+        <div class="col m-0">
+          <button class="btn btn-info btn-lg calc-button mt-3 btn-warning" id="subtract">-</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col m-0">
+          <button class="btn btn-info btn-lg calc-button mt-3" id="one">1</button>
+        </div>
+        <div class="col m-0">
+          <button class="btn btn-info btn-lg calc-button mt-3" id="two">2</button>
+        </div>
+        <div class="col m-0">
+          <button class="btn btn-info btn-lg calc-button mt-3" id="three">3</button>
+        </div>
+        <div class="col m-0">
+          <button class="btn btn-info btn-lg calc-button mt-3 btn-warning" id="multiply">*</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col m-0">
+          <button class="btn btn-success btn-lg calc-button mt-3 mb-3" id="clear">AC</button>
+        </div>
+        <div class="col m-0">
+          <button class="btn btn-info btn-lg calc-button mt-3" id="zero">0</button>
+        </div>
+        <div class="col m-0">
+          <button class="btn btn-info btn-lg calc-button mt-3 btn-danger" id="equals">=</button>
+        </div>
+        <div class="col m-0">
+          <button class="btn btn-info btn-lg calc-button mt-3 btn-warning" id="divide">/</button>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  
+  
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script></body>
   <script src="js/scripts.js"></script>
